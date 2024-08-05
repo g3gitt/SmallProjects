@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <form name="c">
+        <input type="text" name="Input" class="display" readonly>
+        <br>
+        <input type="button" class="btn" value="1" onclick="c.Input.value += '1'">
+        <input type="button" class="btn" value="2" onclick="c.Input.value += '2'">
+        <input type="button" class="btn a" value="3" onclick="c.Input.value += '3'">
+        <input type="button" class="btn" value="+" onclick="c.Input.value += ' + '">
+        <br>
+        <input type="button" class="btn" value="4" onclick="c.Input.value += '4'">
+        <input type="button" class="btn" value="5" onclick="c.Input.value += '5'">
+        <input type="button" class="btn a" value="6" onclick="c.Input.value += '6'">
+        <input type="button" class="btn" value="-" onclick="c.Input.value += ' - '">
+        <br>
+        <input type="button" class="btn" value="7" onclick="c.Input.value += '7'">
+        <input type="button" class="btn" value="8" onclick="c.Input.value += '8'">
+        <input type="button" class="btn a" value="9" onclick="c.Input.value += '9'">
+        <input type="button" class="btn" value="*" onclick="c.Input.value += ' * '">
+        <br>
+        <input type="button" class="btn" value="C" onclick="c.Input.value = ''">
+        <input type="button" class="btn" value="0" onclick="c.Input.value += '0'">
+        <input type="button" class="btn eq" value="=" onclick="c.Input.value = eval(c.Input.value)">
+        <input type="button" class="btn" value="/" onclick="c.Input.value += ' / '">
+    </form>
+</body>  
+</html>     
